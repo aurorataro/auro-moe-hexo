@@ -1,38 +1,19 @@
 ---
-title: Hello World
+title: Hello World!
+date: 2021-01-01
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+👏 Hello, World!
 
-### Create a new post
+你好。现在是 Auro BLOG 5.0
+以下是本博客的变迁图表
 
-``` bash
-$ hexo new "My New Post"
-```
+|VER|code|frame|first commit|SaaS
+|:-:|:-:|:-:|:-:|:-:|
+|**1.0**|Astesia|HEXO|Jul 3, 2021|Github Pages|
+|**2.0**|AuroBlog|HEXO|Jul 26, 2023|Github Pages|
+|**3.0**|AuroBlogNEXT|VuePress|May 6, 2024|Cloudflare Pages|
+|**4.0**|AuroBlog|NotionNEXT|Sep 22, 2024|Cloudflare Pages|
+|**5.0(now)**|詩超絆|HEXO|NULL|Cloudflare Pages|
 
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+曾用域名为 `aurorataro.life`，`blog.auro.ink`。
