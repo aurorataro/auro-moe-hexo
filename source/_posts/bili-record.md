@@ -30,7 +30,7 @@ index_img:
 
 [项目地址](https://github.com/BililiveRecorder/BililiveRecorder)
 
-![mikufans 录播姬](https://cdn.tarocloud.net/post/image/bilirecord/mikufans-record.png)
+![mikufans 录播姬](https://cdn.auro.moe/post/mikufans-record.webp)
 
 #### 使用 Docker 部署
 
@@ -64,7 +64,7 @@ docker run -d \
 
 [项目地址](https://github.com/acgnhiki/blrec)
 
-![blrec](https://cdn.tarocloud.net/post/image/bilirecord/blrec.png)
+![blrec](https://cdn.auro.moe/post/blrec.webp)
 
 #### 使用 Docker 部署
 
@@ -125,15 +125,15 @@ sudo docker run \
 
 登录账号打开`创作中心`，右键点击`查看网页源代码`
 
-![](https://cdn.tarocloud.net/post/image/bilirecord/blrec-getcookies-1.png)
+![](https://cdn.auro.moe/post/blrec-getcookies-1.webp)
 
 按下`F12-开发者工具`，点击`network-网络`并刷新页面。
 
-![](https://cdn.tarocloud.net/post/image/bilirecord/blrec-getcookies-2.png)
+![](https://cdn.auro.moe/post/blrec-getcookies-2.webp)
 
 点击`home`，在标头中找到 Cookie ，复制其后面一大段文本原封不动的粘贴到录播姬的配置中。（blrec 支持 cookies 的检查。）
 
-![](https://cdn.tarocloud.net/post/image/bilirecord/blrec-getcookies-3.png)
+![](https://cdn.auro.moe/post/blrec-getcookies-3.webp)
 
 ## ⬆️ 录像上传
 
@@ -151,7 +151,7 @@ sudo docker run \
 
 [项目地址](https://github.com/mwxmmy/biliupforjava)
 
-![](https://cdn.tarocloud.net/post/image/bilirecord/blrec-biliup.png)
+![](https://cdn.auro.moe/post/blrec-biliup.webp)
 
 使用 Docker 部署
 
