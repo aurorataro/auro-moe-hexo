@@ -1081,9 +1081,9 @@ static_prefix:
   internal_css: /css
   internal_img: /img
 
-  anchor: https://registry.npmmirror.com/anchor-js/5.0.0/
+  anchor: https://lib.baomitu.com/anchor-js/5.0.0/
 
-  github_markdown: https://registry.npmmirror.com/github-markdown-css/4.0.0/
+  github_markdown: https://lib.baomitu.com/github-markdown-css/4.0.0/
 
   jquery: https://lib.baomitu.com/jquery/3.6.4/
 
@@ -1091,7 +1091,7 @@ static_prefix:
 
   prismjs: https://lib.baomitu.com/prism/1.29.0/
 
-  tocbot: https://registry.npmmirror.com/tocbot/4.20.1/
+  tocbot: https://lib.baomitu.com/tocbot/4.20.1/
 
   typed: https://lib.baomitu.com/typed.js/2.0.12/
 
@@ -1099,7 +1099,7 @@ static_prefix:
 
   nprogress: https://lib.baomitu.com/nprogress/0.2.0/
 
-  mathjax: https://registry.npmmirror.com/mathjax/3.2.2/
+  mathjax: https://lib.baomitu.com/mathjax/3.2.2/
 
   katex: https://lib.baomitu.com/KaTeX/0.16.2/
 
@@ -1107,20 +1107,20 @@ static_prefix:
 
   clipboard: https://lib.baomitu.com/clipboard.js/2.0.11/
 
-  mermaid: https://registry.npmmirror.com/mermaid/8.14.0/
+  mermaid: https://lib.baomitu.com/mermaid/8.14.0/
 
-  valine: https://registry.npmmirror.com/valine/1.5.1/
+  valine: https://lib.baomitu.com/valine/1.5.1/
 
   waline: https://registry.npmmirror.com/@waline/client/2.15.8/files/dist/
 
-  gitalk: https://registry.npmmirror.com/gitalk/1.8.0/
+  gitalk: https://lib.baomitu.com/gitalk/1.8.0/
 
-  disqusjs: https://registry.npmmirror.com/disqusjs/1.3.0/
+  disqusjs: https://lib.baomitu.com/disqusjs/1.3.0/
 
-  twikoo: https://registry.npmmirror.com/twikoo/1.6.8/
+  twikoo: https://lib.baomitu.com/twikoo/1.6.8/
 
-  discuss: https://registry.npmmirror.com/discuss/1.2.1/
+  discuss: https://lib.baomitu.com/discuss/1.2.1/
 
-  hint: https://registry.npmmirror.com/hint.css/2.7.0/
+  hint: https://lib.baomitu.com/hint.css/2.7.0/
 
   moment: https://lib.baomitu.com/moment.js/2.29.4/
