@@ -1087,25 +1087,25 @@ static_prefix:
 
   jquery: https://registry.npmmirror.com/jquery/3.6.4/
 
-  bootstrap: https://registry.npmmirror.com/twitter-bootstrap/4.6.1/
+  bootstrap: https://lib.baomitu.com/twitter-bootstrap/4.6.1/
 
-  prismjs: https://registry.npmmirror.com/prism/1.29.0/
+  prismjs: https://lib.baomitu.com/prism/1.29.0/
 
   tocbot: https://registry.npmmirror.com/tocbot/4.20.1/
 
   typed: https://registry.npmmirror.com/typed.js/2.0.12/
 
-  fancybox: https://registry.npmmirror.com/fancybox/3.5.7/
+  fancybox: https://lib.baomitu.com/fancybox/3.5.7/
 
   nprogress: https://registry.npmmirror.com/nprogress/0.2.0/
 
   mathjax: https://registry.npmmirror.com/mathjax/3.2.2/
 
-  katex: https://registry.npmmirror.com/KaTeX/0.16.2/
+  katex: https://lib.baomitu.com/KaTeX/0.16.2/
 
   busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/
 
-  clipboard: https://registry.npmmirror.com/clipboard.js/2.0.11/
+  clipboard: https://lib.baomitu.com/clipboard.js/2.0.11/
 
   mermaid: https://registry.npmmirror.com/mermaid/8.14.0/
 
@@ -1123,4 +1123,4 @@ static_prefix:
 
   hint: https://registry.npmmirror.com/hint.css/2.7.0/
 
-  moment: https://registry.npmmirror.com/moment.js/2.29.4/
+  moment: https://lib.baomitu.com/moment.js/2.29.4/
