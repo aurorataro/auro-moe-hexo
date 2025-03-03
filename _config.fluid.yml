@@ -1085,7 +1085,7 @@ static_prefix:
 
   github_markdown: https://registry.npmmirror.com/github-markdown-css/4.0.0/
 
-  jquery: https://registry.npmmirror.com/jquery/3.6.4/
+  jquery: https://lib.baomitu.com/jquery/3.6.4/
 
   bootstrap: https://lib.baomitu.com/twitter-bootstrap/4.6.1/
 
@@ -1093,11 +1093,11 @@ static_prefix:
 
   tocbot: https://registry.npmmirror.com/tocbot/4.20.1/
 
-  typed: https://registry.npmmirror.com/typed.js/2.0.12/
+  typed: https://lib.baomitu.com/typed.js/2.0.12/
 
   fancybox: https://lib.baomitu.com/fancybox/3.5.7/
 
-  nprogress: https://registry.npmmirror.com/nprogress/0.2.0/
+  nprogress: https://lib.baomitu.com/nprogress/0.2.0/
 
   mathjax: https://registry.npmmirror.com/mathjax/3.2.2/
 
