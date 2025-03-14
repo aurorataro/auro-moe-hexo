@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
 date: {{ date }}
-index_img: /img/example.jpg
+index_img: 
 categories:
     - Cate
 tags:

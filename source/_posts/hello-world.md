@@ -5,6 +5,8 @@ date: 2021-01-01
 
 👏 Hello, World!
 
+<!-- MORE -->
+
 你好。现在是 Auro BLOG 5.0
 以下是本博客的变迁图表
 
