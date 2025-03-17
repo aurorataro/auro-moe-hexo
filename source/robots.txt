@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /archives/
+Disallow: /tags/
+Disallow: /categories/
+
+Sitemap: https://auro.moe/sitemap.xml
