@@ -60,20 +60,20 @@ trickle -s -u 512 -d 2048 firefox
 
 此时可以使用其他服务商提供的镜像，此处列举部分：
 
-- ~~百度云：https://mirror.baidubce.com~~
-- ~~网易云：https://hub-mirror.c.163.com~~
-- ~~Docker Proxy：https://dockerproxy.com~~
-- ~~阿里云：[登录控制台自行获取](https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors)，每人独有地址。~~ 
+- ~~百度云：`https://mirror.baidubce.com`~~
+- ~~网易云：`https://hub-mirror.c.163.com`~~
+- ~~Docker Proxy：`https://dockerproxy.com`~~
+- ~~阿里云：[登录控制台自行获取](https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors)，每人独有地址。~~
 - 轩辕：`https://docker.1ms.run` `https://docker.xuanyuan.me`
 
 以下服务商的镜像服务可能不可用，自行甄别：
 
-- 谷歌云容器镜像：http://mirror.gcr.io ( 可能不可用 )
-- 中科大镜像：https://docker.mirrors.ustc.edu.cn ( 仅供内部使用 )
+- 谷歌云容器镜像：`http://mirror.gcr.io` ( 可能不可用 )
+- 中科大镜像：`https://docker.mirrors.ustc.edu.cn` ( 仅供内部使用 )
 
 Cloudflare Workers 搭建 Docker Hub 镜像：
 
-https://github.com/ciiiii/cloudflare-docker-proxy
+[https://github.com/ciiiii/cloudflare-docker-proxy](https://github.com/ciiiii/cloudflare-docker-proxy)
 
 ### 🐋 修改 Docker 镜像源方法
 
@@ -98,7 +98,7 @@ sudo systemctl restart docker
 
 ---
 
-# ⌨️ 常用命令
+## ⌨️ 常用命令
 
 ## 😻 Git 、Github 相关
 
@@ -129,12 +129,11 @@ ssh -T git@github.com
 1. 关闭 SYN-flood 防御
 2. 打开 LAN-WAN 的 IP 动态伪装
 3. 添加自定义防火墙规则
-    
-    ```bash
-    iptables -t nat -I POSTROUTING -o eth0 -j MASQUERADE
-    # 部分品牌路由器做主路由时，无需此规则，如果出现了异常的加载速度就使用这个。
-    ```
-    
+
+```bash
+iptables -t nat -I POSTROUTING -o eth0 -j MASQUERADE
+# 部分品牌路由器做主路由时，无需此规则，如果出现了异常的加载速度就使用这个。
+```
 
 ## 🐋 Docker.service 启动时意外退出 error code 1”
 

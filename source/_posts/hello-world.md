@@ -10,7 +10,7 @@ date: 2021-01-01
 你好。现在是 Auro BLOG 5.0
 以下是本博客的变迁图表
 
-|VER|code|frame|first commit|SaaS
+| VER | code|frame|first commit|SaaS|
 |:-:|:-:|:-:|:-:|:-:|
 |**1.0**|Astesia|HEXO|Jul 3, 2021|Github Pages|
 |**2.0**|AuroBlog|HEXO|Jul 26, 2023|Github Pages|

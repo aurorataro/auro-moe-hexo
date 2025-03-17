@@ -32,7 +32,7 @@ index_img:
 
 ![mikufans 录播姬](https://cdn.auro.moe/post/mikufans-record.webp)
 
-#### 使用 Docker 部署
+#### 使用 Docker 部署 mikufans 录播姬
 
 ``` bash
 docker run -d \
@@ -44,17 +44,18 @@ docker run -d \
   bililive/recorder:latest
 ```
 
-使用宿主机保存录播文件的路径替换 `/path/to/recordings`     
-如果你的容器能被外网访问，建议设置 `http-basic-auth` 
+使用宿主机保存录播文件的路径替换`/path/to/recordings`
+如果你的容器能被外网访问，建议设置 `http-basic-auth`
 
 容器运行后，浏览器打开录播姬运行的窗口，打开 `设置-高级设置` 进行配置，下面是我使用的一些配置，按自己需求修改。
 
 #### mikufans 直播姬设置
+
 | 设置 | 选项 | 备注 |
 | :-: | :-: | :-: |
 | 分段模式 | 根据时间分段 | 每 60 分保存为一个文件 |
 | 在flv中写入直播信息 | ✔️ |保存直播信息到 `mediainfo` 中 |
-| Webhook V2 | http://192.168.1.100:2356/recordWebHook | 这里使用的地址，用于上传插件的参数传递，稍后会提到 |
+| Webhook V2 |[http://192.168.1.100:2356/recordWebHook](http://192.168.1.100:2356/recordWebHook)| 这里使用的地址，用于上传插件的参数传递，稍后会提到 |
 | Cookie | ******** | 建议设置小号，稍后会提到 |
 
 其他设置默认。  
@@ -66,7 +67,7 @@ docker run -d \
 
 ![blrec](https://cdn.auro.moe/post/blrec.webp)
 
-#### 使用 Docker 部署
+#### 使用 Docker 部署 blrec
 
 ``` bash
 sudo docker run \
@@ -77,6 +78,7 @@ sudo docker run \
     --cert-file path/to/cert-file \
     --api-key bili2233
 ```
+
 `--key-file` 和 `--cert-file` 如果你需要 https 可以设置，否则在部署时应当去除。  
 配置文件、日志、录播文件请自行设置到相应的路径中。
 
@@ -89,7 +91,7 @@ sudo docker run \
 | flv添加元数据 | ✔️ | 如果需要本地播放或者是剪辑需求，开启这个拖动进度条不会卡顿 |
 | User Agent | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36 | 我直接 Copy 的我电脑浏览器的配置 |
 | Cookie | ******** | 建议配置小号，下面还会提到 |
-| Webhook | http://192.168.1.100:2356/recordWebHook | 全勾。这里使用的地址，用于上传插件的参数传递，稍后会提到 |
+| Webhook |[http://192.168.1.100:2356/recordWebHook](http://192.168.1.100:2356/recordWebHook)| 全勾。这里使用的地址，用于上传插件的参数传递，稍后会提到 |
 
 其他设置默认。
 
@@ -104,7 +106,7 @@ sudo docker run \
 | API 接口 | REST API & GraphQL API | REST API |
 | 主观网络体验 | 添加房间后，经常会与弹幕服务器断开连接，导致无法及时开始录制 | 首次启动就能加载房间信息的话，录制几乎没有问题。如果上级路由设置了透明代理，可能会导致获取房间失败 |
 
-### 为什么要设置 Cookies 以及 Cookies 的获取方法。
+### 为什么要设置 Cookies 以及 Cookies 的获取方法
 
 {% note primary %}
 结论
@@ -129,15 +131,15 @@ Cookies 十分隐私，泄露 Cookies 相当于泄露账号和密码，所以请
 
 登录账号打开`创作中心`，右键点击`查看网页源代码`
 
-![](https://cdn.auro.moe/post/blrec-getcookies-1.webp)
+![blrec-getcookies-1](https://cdn.auro.moe/post/blrec-getcookies-1.webp)
 
 按下`F12-开发者工具`，点击`network-网络`并刷新页面。
 
-![](https://cdn.auro.moe/post/blrec-getcookies-2.webp)
+![blrec-getcookies-2](https://cdn.auro.moe/post/blrec-getcookies-2.webp)
 
 点击`home`，在标头中找到 Cookie ，复制其后面一大段文本原封不动的粘贴到录播姬的配置中。（blrec 支持 cookies 的检查。）
 
-![](https://cdn.auro.moe/post/blrec-getcookies-3.webp)
+![blrec-getcookies-3](https://cdn.auro.moe/post/blrec-getcookies-3.webp)
 
 ## ⬆️ 录像上传
 
@@ -150,16 +152,15 @@ Cookies 十分隐私，泄露 Cookies 相当于泄露账号和密码，所以请
 >在这里，我使用 biliup-for-java 投稿视频。
 >在录播姬设置好 webhook 地址后，主播开播、下播时，相关参数都会被传输到 biliup 中，实现自动化投稿录像。
 
-
 #### biliup-for-java
 
 [项目地址](https://github.com/mwxmmy/biliupforjava)
 
-![](https://cdn.auro.moe/post/blrec-biliup.webp)
+![blrec-biliup](https://cdn.auro.moe/post/blrec-biliup.webp)
 
 使用 Docker 部署
 
-``` bash 
+``` bash
 docker pull mwxmmy/biliupforjava
 docker run -p 宿主机端口:80 -v 宿主机路径:/bilirecord /mnt:/mnt --name bup -d --restart always mwxmmy/biliupforjava
 
