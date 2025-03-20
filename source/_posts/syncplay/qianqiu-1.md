@@ -29,7 +29,7 @@ archive: ture
 
 星际穿越 Interstellar（2小时49分钟）
 
-![Interstellar](https://cdn.tarocloud.net/post/image/syncplay-guide-qianqiu/Interstellar-photo.jpg)
+![Interstellar](https://cdn.auro.moe/post/Interstellar-photo.webp)
 
 [在TMDB上查看信息](https://www.themoviedb.org/movie/157336-interstellar)
 

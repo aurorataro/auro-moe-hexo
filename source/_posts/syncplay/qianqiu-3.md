@@ -30,7 +30,7 @@ archive: ture
 BanG Dream! It's MyGO!!!!!  
 (共 13 话，一话约 25 分钟)
 
-![BanG Dream! It's MyGO!!!!!](https://cdn.tarocloud.net/post/image/qianqiu-sync-play-3/bang.dream.its.mygo-photo.jpg)
+![BanG Dream! It's MyGO!!!!!](https://cdn.auro.moe/post/bang.dream.its.mygo-photo.webp)
 
 [在 Bangumi 上查看信息](https://bgm.tv/subject/428735)
 

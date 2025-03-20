@@ -29,7 +29,7 @@ archive: ture
 
 粉红豹 The Pink Panther（1小时33分钟）
 
-![The Pink Panther](https://cdn.tarocloud.net/post/image/syncplay-guide-qianqiu-2/ThePinkPanther-photo.png)
+![The Pink Panther](https://cdn.auro.moe/post/ThePinkPanther-photo.webp)
 
 [在TMDB上查看信息](https://www.themoviedb.org/movie/12096-the-pink-panther)
 

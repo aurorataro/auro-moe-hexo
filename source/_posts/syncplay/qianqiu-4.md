@@ -20,7 +20,7 @@ archive: ture
 GIRLS BAND CRY  
 (共 13 话，一话约 25 分钟)
 
-![GIRLS BAND CRY](https://cdn.tarocloud.net/post/image/qianqiu-sync-play-4/girls.band.cry-photo.png)
+![GIRLS BAND CRY](https://cdn.auro.moe/post/girls.band.cry-photo.webp)
 [在 Bangumi 上查看信息](https://bgm.tv/subject/431767)
 
 ### 交流平台
