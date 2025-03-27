@@ -1,5 +1,5 @@
 ---
-title: Clash 的 DNS 请求逻辑
+title: 【转载】Clash 的 DNS 请求逻辑
 categories:
   - [Network,Proxy]
 tags:
@@ -7,18 +7,21 @@ tags:
   - Proxy
   - DNS 
 date: 2021-07-25 00:41:54
+author: Sukka
 index_img:
 ---
 
-> 本文节选转载自 [浅谈在代理环境中的 DNS 解析行为 by Sukka](https://blog.skk.moe/post/what-happend-to-dns-in-proxy/) ，请支持原作者。
+{% note info %}
+本文节选转载自 [浅谈在代理环境中的 DNS 解析行为 by Sukka](https://blog.skk.moe/post/what-happend-to-dns-in-proxy/) ，请支持原作者。
+{% endnote %}
 
-<!-- MORE -->
+## DNS
 
 1. 当访问一个域名时， nameserver 与 fallback 列表内的所有服务器并发请求，得到域名对应的 IP 地址。
 2. clash 将选取 nameserver 列表内，解析最快的结果。
 3. 若解析结果中，IP 地址属于 国外，那么 clash 将选择 fallback 列表内，解析最快的结果。因此，我在 nameserver 和 fallback 内都放置了无污染、解析速度较快的国内 DNS 服务器，以达到最快的解析速度。但是 fallback 列表内服务器会用在解析境外网站，为了结果绝对无污染，我仅保留了支持 DoT/DoH 的两个服务器。
 
-- clash DNS 配置注意事项：
+## clash DNS 配置注意事项
 
 1. 如果您为了确保 DNS 解析结果无污染，请仅保留列表内以 tls:// 或 https:// 开头的 DNS 服务器，但是通常对于国内域名没有必要。
 

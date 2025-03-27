@@ -3,13 +3,10 @@ title: 2025年订阅精简计划
 categories:
   - Life
 tags:
+  - Life
 date: 2025-01-01 16:53:26
 index_img:
 ---
-
-订阅精简
-
-<!-- MORE -->
 
 # 在线订阅
 
