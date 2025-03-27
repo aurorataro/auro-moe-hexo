@@ -3,16 +3,14 @@ title: Bilibili live 自动录播与上传
 categories:
   - Docs
 tags:
-  - bilibili
-  - streaming
+  - Bilibili
+  - Streaming
 date: 2024-06-10 09:54:23
 index_img:
 ---
 
 从去年10月起，一直帮群友们录制直播录像。现在这套系统已经运行大半年了，还算比较稳定。  
 如果你想自建，可以参考本文的部分内容。
-
-<!-- MORE -->
 
 >Docker 与直接启动服务相比比较好管理，所以本文介绍的基本都是 Docker 部署方案。
 

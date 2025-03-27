@@ -1,5 +1,6 @@
 ---
-title: about
+title: 标题
 layout: about
 ---
-About 页
+
+[Hello world](post/hello-world)
