@@ -141,6 +141,39 @@ iptables -t nat -I POSTROUTING -o eth0 -j MASQUERADE
 
 ## 🍥 Debian 12 (bookworm) 静态 IP
 
+1. 打开 `systemd-networkd` 的目录：
+
+    ``` bash
+    cd /etc/systemd/network/
+    ```
+
+2. 找到对应的网络接口配置文件（通常是类似 99-default.link 或 00-wired.network 等），如果没有，可以创建一个新的配置文件：
+
+    ``` bash
+    sudo nano /etc/systemd/network/20-wired.network
+    ```
+
+3. 在文件中添加以下内容（将 `enp3s0` 替换为你实际的网络接口名，IP 地址、网关和 DNS 也根据你的网络设置来修改）：
+
+    ``` ini
+    [Network]
+    Address=192.168.1.100/24          # 设定静态 IP 地址和子网掩码
+    Gateway=192.168.1.1               # 设置默认网关
+    DNS=8.8.8.8                       # 设置 DNS 服务器（可选）
+    DNS=8.8.4.4                       # 可设置多个 DNS
+
+    [DHCP]
+    UseDHCP=false                     # 禁用 DHCP
+    ```
+
+4. 保存退出文件。
+
+5. 重新启动网络服务
+
+    ``` bash
+    sudo systemctl restart systemd-networkd
+    ```
+
 ## ✂️ FFmpeg 指令
 
 ### 1. 指定开始结束时间无损裁剪**视频**
@@ -154,3 +187,5 @@ ffmpeg  -i input.mp4 -ss 00:01:00 -to 00:02:00 -c copy output1.mp4
 ```bash
 ffmpeg  -i source.mp3  -vn -acodec copy -ss 00:03:21.36 -t 00:00:41 output.mp3
 ```
+
+推荐使用小丸工具箱。

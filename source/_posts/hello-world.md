@@ -1,5 +1,5 @@
 ---
-title: 👏 Hello World!
+title: 👏 Hello, Happy World!
 date: 2021-01-01
 ---
 
