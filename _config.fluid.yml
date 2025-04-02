@@ -147,12 +147,12 @@ color:
 
   # 顶部菜单背景色
   # Color of navigation bar background
-  navbar_bg_color: "#FFD9EC"
+  navbar_bg_color: "#F1D0D6"
   navbar_bg_color_dark: "#1f3144"
 
   # 顶部菜单字体色
   # Color of navigation bar text
-  navbar_text_color: "#5D4157"
+  navbar_text_color: "#3A3A3A"
   navbar_text_color_dark: "#d0d0d0"
 
   # 副标题字体色
@@ -227,9 +227,9 @@ color:
 # Font
 font:
   font_size: 16px
-  font_family:
+  font_family: "Microsoft YaHei UI Light"
   letter_spacing: 0.02em
-  code_font_size: 85%
+  code_font_size: 88%
 
 # 指定自定义 .js 文件路径，支持列表；路径是相对 source 目录，如 /js/custom.js 对应存放目录 source/js/custom.js
 # Specify the path of your custom js file, support list. The path is relative to the source directory, such as `/js/custom.js` corresponding to the directory `source/js/custom.js`
@@ -353,7 +353,7 @@ navbar:
   # 导航栏毛玻璃特效，实验性功能，可能会造成页面滚动掉帧和抖动，部分浏览器不支持会自动不生效
   # Navigation bar frosted glass special animation. It is an experimental feature
   ground_glass:
-    enable: true
+    enable: ture
 
     # 模糊像素，只能为数字，数字越大模糊度越高
     # Number of blurred pixel. the larger the number, the higher the blur
@@ -481,7 +481,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: /img/cover-anon.webp
+  banner_img: /img/cover-hhw.webp
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image
@@ -491,7 +491,7 @@ index:
   # 头图黑色蒙版的不透明度，available: 0 - 1.0，1 是完全不透明
   # Opacity of the banner mask, 1.0 is completely opaque
   # Available: 0 - 1.0
-  banner_mask_alpha: 0.1
+  banner_mask_alpha: 0.15
 
   # 首页副标题的独立设置
   # Independent config of home page subtitle
@@ -553,7 +553,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: /img/cover-rana.webp
+  banner_img: /img/cover-anon.webp
   banner_img_height: 70
   banner_mask_alpha: 0.3
 
@@ -606,7 +606,7 @@ post:
   # 在文章开头显示文章更新时间，该时间默认是 md 文件更新时间，可通过 front-matter 中 `updated` 手动指定（和 date 一样格式）
   # Update date is displayed at the beginning of the post. The default date is the update date of the md file, which can be manually specified by `updated` in front-matter (same format as date)
   updated:
-    enable: false
+    enable: ture
 
     # 格式参照 ISO-8601 日期格式化
     # ISO-8601 date format
@@ -615,7 +615,7 @@ post:
 
     # 是否使用相对时间表示，比如："3 天前"
     # If true, it will be a relative time, such as: "3 days ago"
-    relative: false
+    relative: true
 
     # 提示标签类型
     # Note class
@@ -686,13 +686,13 @@ post:
     # 显示更新日期
     # Show update date
     update_date:
-      enable: false
+      enable: ture
       format: "LL"
 
   # 文章底部上一篇下一篇功能
   # Link to previous/next post
   prev_next:
-    enable: false
+    enable: true
 
   # 文章图片标题
   # Image caption
@@ -917,8 +917,8 @@ discuss:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: /img/cover-anon.webp
-  banner_img_height: 60
+  banner_img: /img/cover-hhw.webp
+  banner_img_height: 80
   banner_mask_alpha: 0.3
 
 
@@ -928,8 +928,8 @@ archive:
 #---------------------------
 category:
   enable: true
-  banner_img: /img/cover-anon.webp
-  banner_img_height: 60
+  banner_img: /img/cover-hhw.webp
+  banner_img_height: 80
   banner_mask_alpha: 0.3
 
   # 分类的排序字段，前面带减号是倒序，不带减号是正序
@@ -957,7 +957,7 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: /img/cover-anon.webp
+  banner_img: /img/cover-hhw.webp
   banner_img_height: 80
   banner_mask_alpha: 0.3
   tagcloud:
@@ -974,8 +974,8 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: /img/cover-anon.webp
-  banner_img_height: 60
+  banner_img: /img/cover-kokoro.webp
+  banner_img_height: 80
   banner_mask_alpha: 0.3
   avatar: /img/a-avatar.png
   name: "Aurorataro"
@@ -996,7 +996,7 @@ about:
 # Custom Page through `hexo new page`
 #---------------------------
 page:
-  banner_img: /img/cover-rana.webp
+  banner_img: /img/cover-anon.webp
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -1007,8 +1007,8 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: /img/cover-rana.webp
-  banner_img_height: 85
+  banner_img: /img/cover-anon.webp
+  banner_img_height: 80
   banner_mask_alpha: 0.3
   # 重定向到首页的延迟(毫秒)
   # Delay in redirecting to home page (milliseconds)
@@ -1021,8 +1021,8 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: /img/cover-anon.webp
-  banner_img_height: 60
+  banner_img: /img/cover-kokoro.webp
+  banner_img_height: 80
   banner_mask_alpha: 0.3
   # 友链的成员项
   # Member item of page
