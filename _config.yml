@@ -134,3 +134,11 @@ image_minifier:
   optimizationLevel: 2
   pngquant: false
   progressive: false
+
+plugins:
+  - hexo-browsersync
+ 
+hexo-browsersync:
+  ghostMode: true     # 同步滚动条位置等行为
+  notify: true        # 开启通知提醒
+  open: true          # 自动打开浏览器

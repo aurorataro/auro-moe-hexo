@@ -1,5 +1,5 @@
 ---
-title: 2025年订阅精简计划
+title: 2025 年订阅精简计划
 categories:
   - Life
 tags:

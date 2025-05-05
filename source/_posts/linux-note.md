@@ -96,9 +96,41 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
 
+## 📄 设置 Swap 空间 ( Swap 文件 )
+
+创建一个 1 GB 的 Swap 文件
+
+``` bash
+sudo fallocate -l 1G /swapfile
+# 或者
+sudo dd if=/dev/zero of=/swapfile bs=1M count=1024 status=progress
+```
+
+设置 `600` 权限，只有 root 能读取
+
+``` bash
+chmod 600 /swapfile
+```
+
+格式化文件为 Swap，并启用
+
+``` bash
+sudo mkswap /swapfile
+sudo swapon /swapfile
+```
+
+`free m` 检查是否生效
+
+``` bash
+aurora@debian12:~$ free -h
+               total        used        free      shared  buff/cache   available
+Mem:           960Mi       274Mi       224Mi       2.6Mi       618Mi       686Mi
+Swap:          1.0Gi          0B       1.0Gi
+```
+
 ---
 
-## ⌨️ 常用命令
+# ⌨️ 常用命令
 
 ## 😻 Git 、Github 相关
 
