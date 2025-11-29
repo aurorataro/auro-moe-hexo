@@ -96,38 +96,6 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
 
-## 📄 设置 Swap 空间 ( Swap 文件 )
-
-创建一个 1 GB 的 Swap 文件
-
-``` bash
-sudo fallocate -l 1G /swapfile
-# 或者
-sudo dd if=/dev/zero of=/swapfile bs=1M count=1024 status=progress
-```
-
-设置 `600` 权限，只有 root 能读取
-
-``` bash
-chmod 600 /swapfile
-```
-
-格式化文件为 Swap，并启用
-
-``` bash
-sudo mkswap /swapfile
-sudo swapon /swapfile
-```
-
-`free m` 检查是否生效
-
-``` bash
-aurora@debian12:~$ free -h
-               total        used        free      shared  buff/cache   available
-Mem:           960Mi       274Mi       224Mi       2.6Mi       618Mi       686Mi
-Swap:          1.0Gi          0B       1.0Gi
-```
-
 ---
 
 # ⌨️ 常用命令
@@ -221,3 +189,53 @@ ffmpeg  -i source.mp3  -vn -acodec copy -ss 00:03:21.36 -t 00:00:41 output.mp3
 ```
 
 推荐使用小丸工具箱。
+
+## 📄 设置 Swap 空间 ( Swap 文件 )
+
+创建一个 1 GB 的 Swap 文件
+
+``` bash
+sudo fallocate -l 1G /swapfile
+# 或者
+sudo dd if=/dev/zero of=/swapfile bs=1M count=1024 status=progress
+```
+
+设置 `600` 权限，只有 root 能读取
+
+``` bash
+chmod 600 /swapfile
+```
+
+格式化文件为 Swap，并启用
+
+``` bash
+sudo mkswap /swapfile
+sudo swapon /swapfile
+```
+
+`free m` 检查是否生效
+
+``` bash
+aurora@debian12:~$ free -h
+               total        used        free      shared  buff/cache   available
+Mem:           960Mi       274Mi       224Mi       2.6Mi       618Mi       686Mi
+Swap:          1.0Gi          0B       1.0Gi
+```
+
+## Debian 安装 Nodejs
+
+官网推荐使用 `nvm` 安装
+
+``` bash
+# 安装 nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+# 刷新终端(?)
+\. "$HOME/.nvm/nvm.sh"
+
+# 列出远程 Nodejs 版本
+nvm ls-remote
+
+# 安装 v22.15.1 (lts)
+nvm install v22.15.1
+```
