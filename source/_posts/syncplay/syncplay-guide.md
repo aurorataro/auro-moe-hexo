@@ -20,7 +20,7 @@ index_img:
 SHA-1：68cdaef93ef39becd4f9f8a0b97e7b9dfc273fdc
 {% endnote %}
 
-{% btn https://share.tarocloud.net/share/XCBtAFvv, 📁文件下载, Tarocloud 盐湖城节点 %}
+{% btn https://share.tarocloud.net/s/n6TpGxi0, 📁文件下载, Tarocloud 盐湖城节点 %}
 {% btn https://loafcraft.lanzouo.com/iMOew2q6qyxi, ☁️蓝奏云备用, 大陆服务器 %}
 
 解压后，我们得到以下文件
